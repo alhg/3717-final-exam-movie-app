@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AddMovieFormItem">
+        <item name="android:padding">16dp</item>
+    </style>
+
 </resources>

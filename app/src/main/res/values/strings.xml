@@ -1,4 +1,12 @@
 <resources>
-    <string name="app_name">3717FinalExam-MovieApp</string>
+    <string name="app_name">Movie Tracker</string>
     <string name="add_movie">Add Movie</string>
+    <string name="movie_title_label">Movie Title</string>
+    <string name="movie_director_label">Director</string>
+    <string name="movie_description_label">Description</string>
+    <string name="movie_genre_label">Genre</string>
+    <string name="movie_title_hint">Ex. Arrival</string>
+    <string name="movie_director_hint">Ex. Denis Villeneuve</string>
+    <string name="movie_description_hint">Ex. A more old-school sci-fi film focusing on unique aspect of alien communication</string>
+    <string name="movie_genre_hint">Ex. Sci-Fi</string>
 </resources>
