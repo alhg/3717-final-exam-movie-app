@@ -5,8 +5,10 @@
     <string name="movie_director_label">Director</string>
     <string name="movie_description_label">Description</string>
     <string name="movie_genre_label">Genre</string>
-    <string name="movie_title_hint">Ex. Arrival</string>
-    <string name="movie_director_hint">Ex. Denis Villeneuve</string>
-    <string name="movie_description_hint">Ex. A more old-school sci-fi film focusing on unique aspect of alien communication</string>
-    <string name="movie_genre_hint">Ex. Sci-Fi</string>
+    <string name="movie_url_label">URL</string>
+    <string name="movie_title_hint">Arrival</string>
+    <string name="movie_director_hint">Denis Villeneuve</string>
+    <string name="movie_description_hint">A more old-school sci-fi film focusing on unique aspect of alien communication</string>
+    <string name="movie_genre_hint">Sci-Fi</string>
+    <string name="movie_url_hint">https://www.imdb.com/title/tt2543164/</string>
 </resources>

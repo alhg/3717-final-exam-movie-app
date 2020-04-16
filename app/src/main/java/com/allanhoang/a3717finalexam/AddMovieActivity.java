@@ -25,6 +25,7 @@ public class AddMovieActivity extends AppCompatActivity {
     private EditText editTextMovieDir;
     private EditText editTextMovieGenre;
     private EditText editTextMovieDes;
+    private EditText editTextMovieURL;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,7 @@ public class AddMovieActivity extends AppCompatActivity {
         editTextMovieDir = findViewById(R.id.edit_text_movie_director);
         editTextMovieGenre = findViewById(R.id.edit_text_movie_genre);
         editTextMovieDes = findViewById(R.id.edit_text_movie_description);
+        editTextMovieURL = findViewById(R.id.edit_text_movie_url);
     }
 
     @Override
@@ -70,6 +72,8 @@ public class AddMovieActivity extends AppCompatActivity {
         movie.put("director", editTextMovieDir.getText().toString());
         movie.put("genre", editTextMovieGenre.getText().toString());
         movie.put("description", editTextMovieDes.getText().toString());
+        movie.put("url", editTextMovieURL.getText().toString());
+
 
         // Add a new document with a generated ID
         db.collection("movies")

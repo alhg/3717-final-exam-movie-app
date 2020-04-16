@@ -65,4 +65,18 @@
         android:hint="@string/movie_description_hint"
         android:inputType="text" />
 
+    <TextView
+        style="@style/AddMovieFormItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_url_label" />
+
+    <EditText
+        android:id="@+id/edit_text_movie_url"
+        style="@style/AddMovieFormItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/movie_url_hint"
+        android:inputType="textUri" />
+
 </LinearLayout>
