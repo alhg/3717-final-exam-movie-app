@@ -9,9 +9,14 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
     public final String TAG = "MainActivity";
+    private RecyclerView movieRecyclerView;
+    private RecyclerView.Adapter movieAdapter;
+    private RecyclerView.LayoutManager layoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,32 +25,14 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        /*
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-        // Create a new user with a first and last name
-        Map<String, Object> user = new HashMap<>();
-        user.put("first", "Ada");
-        user.put("last", "Lovelace");
-        user.put("born", 1815);
+        movieRecyclerView = findViewById(R.id.movie_recycler_view);
 
-        // Add a new document with a generated ID
-        db.collection("users")
-                .add(user)
-                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-                    @Override
-                    public void onSuccess(DocumentReference documentReference) {
-                        Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
-                    }
-                })
-                .addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.w(TAG, "Error adding document", e);
-                    }
-                });
+        layoutManager = new LinearLayoutManager(this);
+        movieRecyclerView.setLayoutManager(layoutManager);
 
-         */
-
+        String[] titles = {"test", "test", "test"};
+        movieAdapter = new MovieItemAdapter(titles);
+        movieRecyclerView.setAdapter(movieAdapter);
     }
 
     @Override
