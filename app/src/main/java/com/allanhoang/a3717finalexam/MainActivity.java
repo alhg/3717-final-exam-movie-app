@@ -56,7 +56,9 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             QuerySnapshot querySnapshot = task.getResult();
-                            setMovieRecyclerWithData(querySnapshot);
+                            if (querySnapshot != null && !querySnapshot.isEmpty()) {
+                                setMovieRecyclerWithData(querySnapshot);
+                            }
                         } else {
                             Log.w(TAG, "Error getting documents.", task.getException());
                         }

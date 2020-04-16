@@ -11,6 +11,7 @@
         layout="@layout/toolbar_main" />
 
     <TextView
+        style="@style/AddMovieFormItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/movie_title_label" />
