@@ -8,20 +8,19 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-class MovieItemAdapter extends RecyclerView.Adapter<MovieItemAdapter.ViewHolder> {
-    private String[] titles;
-    private String director;
-    private String genre;
-    private String description;
-    private String url;
+import java.util.ArrayList;
+import java.util.HashMap;
 
-    public MovieItemAdapter(String[] titles) {
-        this.titles = titles;
+class MovieItemAdapter extends RecyclerView.Adapter<MovieItemAdapter.ViewHolder> {
+    private ArrayList<HashMap<String, String>> movies;
+
+    public MovieItemAdapter(ArrayList<HashMap<String, String>> movies) {
+        this.movies = movies;
     }
 
     @Override
     public int getItemCount() {
-        return titles.length;
+        return movies.size();
     }
 
     @NonNull
@@ -35,7 +34,9 @@ class MovieItemAdapter extends RecyclerView.Adapter<MovieItemAdapter.ViewHolder>
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         CardView cardView = holder.cardView;
         TextView textViewMovieTitle = cardView.findViewById(R.id.card_view_movie_title);
-        textViewMovieTitle.setText(titles[position]);
+
+        HashMap<String, String> movie = movies.get(position);
+        textViewMovieTitle.setText(movie.get("title"));
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
