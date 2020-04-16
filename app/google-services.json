@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "921868579697",
+    "firebase_url": "https://comp-3717-final-exam-movie-app.firebaseio.com",
+    "project_id": "comp-3717-final-exam-movie-app",
+    "storage_bucket": "comp-3717-final-exam-movie-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921868579697:android:8df1bf778fdcc689d57cd0",
+        "android_client_info": {
+          "package_name": "com.allanhoang.a3717finalexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921868579697-9nlo54qegp1mipj7803eoiv6qnokf8t2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXAsDRyQkm0OTplFvV5xCczUkJMS66LKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921868579697-9nlo54qegp1mipj7803eoiv6qnokf8t2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
